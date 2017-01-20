@@ -1,8 +1,91 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.App {
+  text-align: center;
+  flex-direction: column;
 }
 
-a {
-  color: #00B7FF;
+.App-header {
+  background-image: url('http://static.panoramio.com/photos/original/51617224.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 250%;
+  background-position: center;
+  height: 250px;
+  padding: 10px;
+  color: black;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-transition: width .35s ease-in-out;
+}
+
+.About-section {
+  font-family: 'Questrial', cursive;
+}
+
+.About-section-text {
+  font-family: 'Questrial', cursive;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ADD8E6;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.App-intro, .App-intro-2 {
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.App-intro-2 {
+  color: red;
+  font-size: 50px;
+  padding: 10px;
+  margin: 10px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.App-title {
+  border: 8px #FFFF00 dotted;
+}
+
+.form {
+  font-family: 'Questrial', cursive;
+  font-size: 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: #FFFF00;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-group {
+  width: auto;
+}
+
+.form-control {
+  margin: 10px;
+  width: 75%;
+  height: 50px;
+  font-size: 24px;
+}
+
+button {
+  width: 50%;
+  height: 75px;
+  background-color: #449d44;
+  border: 1px #449d44 solid;
+  color: white;
+}
+
+button:hover {
+  width: 60%;
+  height: 80px;
+  background-color: #398439;
+  border: 1px #398439 solid;
+  color: white;
 }

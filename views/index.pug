@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .App
+    .App-header
+      .App-Title
+        h2 Learners Hackathon
+    .App-section-2
+      p.App-intro-2 Challenge Yourself ... To Win!
+    .About-section
+      include about.pug
+    .App-section-3
+      include form.pug
+
+
