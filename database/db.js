@@ -3,7 +3,7 @@ const pgp = require('pg-promise')();
 const connectionString = `postgres://${process.env.USER}@localhost:5432/hackathon`
 const db = pgp(connectionString);
 
-const createParticipant = function(attributes) {
+const createParticipant = (username, email, hackathonidea) => {
   const sql =  `
     INSERT INTO
       participants (username, email, hackathonidea)
@@ -12,15 +12,9 @@ const createParticipant = function(attributes) {
     RETURNING
       *
     `
-  const variables = [
-    attributes.username,
-    attributes.email,
-    attributes.hackathonidea
-  ]
-  return db.one(sql, variables)
-
+  return db.any(sql, [username, email, hackathonidea])
 }
 
 module.exports = {
   createParticipant: createParticipant
-};
+}

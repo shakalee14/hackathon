@@ -17,7 +17,7 @@ router.post('/', function(request, response, next) {
 
  db.createParticipant( username, email, idea )
   .then( participant => {
-    response.redirect('/')
+    response.render('thankyou')
   })
   .catch( error => {
     response.render('error')

@@ -65,27 +65,37 @@
 
 .form-group {
   width: auto;
+  font-size: 16px;
 }
 
 .form-control {
   margin: 10px;
   width: 75%;
   height: 50px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 button {
   width: 50%;
+  font-size: 24px;
   height: 75px;
   background-color: #449d44;
   border: 1px #449d44 solid;
   color: white;
+    font-family: 'Bungee Shade', cursive;
 }
 
 button:hover {
-  width: 60%;
-  height: 80px;
+  width: 52%;
   background-color: #398439;
   border: 1px #398439 solid;
   color: white;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.thankyou {
+  background-image: url('https://media.giphy.com/media/osjgQPWRx3cac/giphy.gif');
+  color: black;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 50px;
 }
