@@ -5,6 +5,7 @@ const CONNECTION_STRING = process.env.NODE_ENV === 'production'
   : `postgres://${process.env.USER}@localhost:5432/hackathon`
 // const CONNECTION_STRING = `postgres://${process.env.USER}@localhost:5432/hackathon`
 const db = pgp(CONNECTION_STRING);
+const pg = require('pg');
 
 const createParticipant = (username, email, hackathonidea) => {
   const sql =  `
