@@ -1,10 +1,10 @@
 const databaseName = process.env.NODE_ENV === 'hackathon'
 const pgp = require('pg-promise')();
-const connectionString = process.env.NODE_ENV === 'production'
+const CONNECTION_STRING = process.env.NODE_ENV === 'production'
   ? process.env.DATABASE_URL
   : `postgres://${process.env.USER}@localhost:5432/hackathon`
-// const connectionString = `postgres://${process.env.USER}@localhost:5432/hackathon`
-const db = pgp(connectionString);
+// const CONNECTION_STRING = `postgres://${process.env.USER}@localhost:5432/hackathon`
+const db = pgp(CONNECTION_STRING);
 
 const createParticipant = (username, email, hackathonidea) => {
   const sql =  `
