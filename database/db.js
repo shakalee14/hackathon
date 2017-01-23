@@ -19,6 +19,19 @@ const createParticipant = (username, email, hackathonidea) => {
   return db.any(sql, [username, email, hackathonidea])
 }
 
+const createTeam = (teamname, teammate1, teammate2, teammate3) => {
+  const sql =  `
+    INSERT INTO
+      teams (teamname, teammate1, teammate2, teammate3)
+    VALUES
+      ($1, $2, $3, $4)
+    RETURNING
+      *
+    `
+  return db.any(sql, [teamname, teammate1, teammate2, teammate3])
+}
+
 module.exports = {
-  createParticipant: createParticipant
+  createParticipant: createParticipant,
+  createTeam: createTeam
 }

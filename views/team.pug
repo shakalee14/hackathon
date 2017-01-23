@@ -1,0 +1,19 @@
+form.form(id='create-team', method='POST', action='/team')
+  .form-group
+    label(for='teamname') Team Name
+    br
+    input(type='text', name='teamname', class='form-control', id='teamname', placeholder='Enter your teamname')
+  .form-group
+    label(for='teammate1') Team Mate 1
+    br
+    input(type='text', name='teammate1', class='form-control', id='teammate1', placeholder='teammate 1 github username')
+  .form-group
+    label(for='teammate2') Team Mate 2
+    br
+    input(type='text', name='teammate2', class='form-control', id='teammate2', placeholder='teammate 2 github username')
+  .form-group
+    label(for='teammate3') Team Mate 3
+    br
+    input(type='text', name='teammate3', class='form-control', id='teammate3', placeholder='teammate 3 github username')
+  .form-group
+    button.btn.btn-default Submit
