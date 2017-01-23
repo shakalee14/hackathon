@@ -31,8 +31,9 @@ router.post('/team', function(request, response, next) {
   let teammate1 = request.body.teammate1
   let teammate2 = request.body.teammate2
   let teammate3 = request.body.teammate3
+  let teammate4 = request.body.teammate4
 
- db.createTeam( teamname, teammate1, teammate2, teammate3 )
+ db.createTeam( teamname, teammate1, teammate2, teammate3, teammate4 )
   .then( team => {
     response.render('thankyou')
   })

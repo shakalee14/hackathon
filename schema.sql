@@ -12,5 +12,6 @@ CREATE TABLE teams(
   teamname VARCHAR(255),
   teammate1 VARCHAR(255),
   teammate2 VARCHAR(255),
-  teammate3 VARCHAR(255)
+  teammate3 VARCHAR(255),
+  teammate4 VARCHAR(255)
 );
