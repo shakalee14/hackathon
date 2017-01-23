@@ -75,13 +75,34 @@
   padding: 10px;
 }
 
+.form2 {
+  text-align: center;
+  font-family: 'Questrial', cursive;
+  font-size: 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-image: url('../images/oakland4.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+  border: 5px #FFF solid;
+  margin: 10px;
+  padding: 10px;
+}
+
 .form-group {
   width: auto;
   font-size: 16px;
 }
 
-label {
+.individual {
   color: #FFF;
+  font-size: 24px;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: black;
+}
+
+.team {
+  color: red;
   font-size: 24px;
   -webkit-text-stroke-width: .2px;
   -webkit-text-stroke-color: black;
